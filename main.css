@@ -1,0 +1,163 @@
+html body{
+  height: 100%;
+  margin: auto;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-image:url(https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-0.3.5&s=ce32af2267a9ebd8e2e7bce30a59891f&auto=format&fit=crop&w=750&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+   height: 100vh;
+   position: relative;
+   background-attachment: fixed;
+   z-index:1;
+    filter:drop-shadow(1px 1px 7px black);
+}
+
+.blur{
+  filter: blur(1px);
+}
+
+h1{
+  color: white;
+  text-align: center;
+  margin-left: 85%;
+  font-size: 50px;
+  width: 224px;
+}
+
+.container{
+  display: grid;
+  height: 100%;
+  grid-row-gap: 100px;
+ grid-template-columns:  1fr 1fr;
+ grid-template-rows: 1fr 4fr 3fr 5fr 1fr;
+ grid-template-areas: "nav nav nav "
+                      ". . ."
+                      "banner banner banner "
+
+                      "banner-body banner-body banner-body";
+}
+
+.resume h2 {
+text-align: center;
+
+}
+
+.resume p {
+  text-align: center;
+}
+
+#title{
+  color: white;
+  font-size: 2em;
+}
+
+
+
+.banner{
+  grid-area: banner;
+  background-color: white;
+  z-index:2;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+
+}
+
+.nycda{
+  background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.61) 0%, rgba(0,36,61,0.6) 50%), url(https://yt3.ggpht.com/a-/ACSszfFzCLsSf1t66EcpbamvZz3RhPLIys4pC-q5NQ=s900-mo-c-c0xffffffff-rj-k-no);
+  width: 30vw;
+  height: 25vh;
+  background-position: center;
+  margin-top: 10px;
+  background-size: cover;
+  filter: drop-shadow(2px 2px 4px gray);
+opacity: 1;
+transition: opacity .4s ease;
+
+}
+
+.nycda:hover{
+opacity: 0.9;
+cursor: pointer;
+}
+
+.lewagon{
+  background-image:linear-gradient(-225deg, rgba(0, 0, 0, 0.61) 0%, rgba(0,36,61,0.6) 50%), url(https://i0.wp.com/futurefunded.co/wp-content/uploads/2018/02/Thumb-logo-Le-Wagon-FutureFunded.jpg?fit=600%2C300&ssl=1);
+  width: 30vw;
+  height: 25vh;
+  background-position: center;
+  margin-top: 10px;
+  background-size: cover;
+  filter: drop-shadow(2px 2px 4px gray);
+  opacity: 1;
+transition: opacity .4s ease;
+}
+
+.lewagon:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+
+.nav{
+  grid-area: nav;
+  background-color:#eff0f2;
+  height: 9vh;
+  margin-top: -19px;
+
+
+}
+
+.banner-body{
+  grid-area: banner-body;
+  background-color: red;
+}
+
+
+
+
+
+
+
+ .container-flex ul{
+color: black;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding-right: 30px;
+}
+
+.container-flex li{
+  padding-right: 20px;
+
+}
+
+li a{
+  text-decoration: none;
+  color: #333333;
+}
+
+li a:hover{
+  color: #da552f;
+}
+
+.resume li{
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
